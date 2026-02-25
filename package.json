@@ -1,0 +1,30 @@
+{
+  "name": "broadcast-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "roadmap CLI broadcast server project node.js typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx --env-file=.env src/index.ts start",
+    "connect": "tsx --env-file=.env src/index.ts connect"
+  },
+  "bin": {
+    "broadcast-server": "./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conoremcd/broadcast-server.git"
+  },
+  "author": "conoremcd",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@types/node": "^24.10.9",
+    "ts-node": "^1.7.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.21.0",
+    "ws": "^8.19.0"
+  }
+}
